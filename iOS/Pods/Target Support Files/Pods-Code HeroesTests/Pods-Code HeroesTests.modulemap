@@ -1,0 +1,6 @@
+framework module Pods_Code_HeroesTests {
+  umbrella header "Pods-Code HeroesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
