@@ -70,7 +70,7 @@ class MenuController: UITableViewController {
     
     override  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
-        if indexPath.row == 4
+        if indexPath.row == 5
         {
             let firebaseAuth = FIRAuth.auth()
             do {
