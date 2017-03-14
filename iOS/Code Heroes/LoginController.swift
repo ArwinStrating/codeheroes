@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import OAuthSwift
+import PKHUD
 
 class LoginController: OAuthViewController, UITextFieldDelegate {
     
@@ -95,6 +96,8 @@ class LoginController: OAuthViewController, UITextFieldDelegate {
                 let accessToken = credential.oauthToken
                 let credentialFir = FIRGitHubAuthProvider.credential(withToken: accessToken)
                 self.authWithFirebase(credential: credentialFir)
+                PKHUD.sharedHUD.contentView = PKHUDSuccessView()
+                PKHUD.sharedHUD.show()
         },
             failure: { error in
                 print(error.description)
@@ -104,6 +107,7 @@ class LoginController: OAuthViewController, UITextFieldDelegate {
         
     func authWithFirebase(credential: FIRAuthCredential) {
             FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                PKHUD.sharedHUD.hide()
                 self.performSegue(withIdentifier: "authSuccess", sender: self)
                 if error != nil {
                     return

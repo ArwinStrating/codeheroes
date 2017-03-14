@@ -11,6 +11,7 @@ target 'Code Heroes' do
   pod 'Firebase/Auth'
   pod 'FirebaseUI/Auth', '~> 3.0'
   pod 'OAuthSwift', '~> 1.1.0'
+  pod 'PKHUD', '~> 4.0'
 
   target 'Code HeroesTests' do
     inherit! :search_paths

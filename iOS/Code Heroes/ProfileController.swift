@@ -9,17 +9,17 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import PKHUD
 
-class ProfileController: UIViewController {
+class ProfileController: UIViewController{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var avatarImg: UIImageView!
-    @IBOutlet weak var repoLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet weak var quoteLabel: UILabel!
     
     var ref: FIRDatabaseReference!
-    
-    let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,7 @@ class ProfileController: UIViewController {
         
         // Get user data
         getUser()
+        getScores()
         
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem?.tintColor = UIColor.white
         let navBackgroundImage:UIImage! = UIImage(named: "bg")
@@ -39,11 +40,8 @@ class ProfileController: UIViewController {
         self.avatarImg.clipsToBounds = true;
         
         // Activity Indicator
-        myActivityIndicator.center = CGPoint(x: view.frame.size.width  / 2,
-                                             y: view.frame.size.height / 2 - 64);
-        
-        myActivityIndicator.startAnimating()
-        view.addSubview(myActivityIndicator)
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
         
         if self.revealViewController() != nil {
             menuButton.target = revealViewController()
@@ -63,24 +61,41 @@ class ProfileController: UIViewController {
     }
     
     func getUser() {
+        var githubName = ""
+        
         ref = FIRDatabase.database().reference()
         let userID = FIRAuth.auth()?.currentUser?.uid
         ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
             let username = value?["codeName"] as? String ?? ""
+            githubName = value?["github_username"] as? String ?? ""
             print("username: " + username)
             self.nameLabel!.text = username
-            self.myActivityIndicator.stopAnimating()
+            self.dataRequest(githubName: githubName)
             //let user = User.init(username: username)
         }) { (error) in
             print(error.localizedDescription)
         }
     }
     
-    func dataRequest() {
+    func getScores() {
+        ref = FIRDatabase.database().reference()
+        let userID = FIRAuth.auth()?.currentUser?.uid
+        ref.child("scores").child("user_scores").child(userID!).child("commits_per_day").child("20170308").observeSingleEvent(of: .value, with: { (snapshot) in
+            let level = String(describing: snapshot.childSnapshot(forPath: "level").value!)
+            let quote = String(describing: snapshot.childSnapshot(forPath: "quote").value!)
+            self.levelLabel.text = "Level: " + level
+            self.quoteLabel.text = quote
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func dataRequest(githubName: String) {
         
-        let url = URL(string: "https://api.github.com/users/ArwinStrating")
+        let url = URL(string: "https://api.github.com/users/" + githubName)
         URLSession.shared.dataTask(with:url!) { (data, response, error) in
             if error != nil {
                 print(error ?? "Unknown error")
@@ -90,7 +105,6 @@ class ProfileController: UIViewController {
                     
                     self.setData(data: parsedData!)
                     
-                    print(parsedData ?? "No data")
                 } catch let error as NSError {
                     print(error)
                 }
@@ -102,11 +116,9 @@ class ProfileController: UIViewController {
     func setData(data: NSDictionary)
     {
         DispatchQueue.main.async(execute: {
-            self.nameLabel?.text = data["name"] as? String
-            self.repoLabel?.text = "Repos: " + String(describing: data["public_repos"] as! Int)
             self.downloadImage(avatarUrl: data["avatar_url"] as! String)
             // Hide loader
-            self.myActivityIndicator.stopAnimating()
+            PKHUD.sharedHUD.hide()
             return
         })
         

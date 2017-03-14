@@ -35,6 +35,7 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.8)
   - OAuthSwift (1.1.1)
+  - PKHUD (4.2.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - Firebase/Database
   - FirebaseUI/Auth (~> 3.0)
   - OAuthSwift (~> 1.1.0)
+  - PKHUD (~> 4.0)
 
 SPEC CHECKSUMS:
   Firebase: 85a581fb04e44f63ae9f4fbc8d6dabf4a4c18653
@@ -54,7 +56,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   OAuthSwift: 6e3a103b3e5639411769cc7e199ec7e14bd1547f
+  PKHUD: 48af884cf00c2213b0313b739d914e6cab1c0f5e
 
-PODFILE CHECKSUM: 8be87931ac40a5b1c40a947b9ed95d4664fdc436
+PODFILE CHECKSUM: 1e44b6fa8b8c59971567e2cb9aea90fa82c1a649
 
 COCOAPODS: 1.0.1
