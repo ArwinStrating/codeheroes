@@ -69,7 +69,6 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func dataRequest(segmentIndex: Int) {
         
-        users.removeAll()
         var date = ""
         var commitsPer = ""
         let dateObj = Date()
@@ -95,6 +94,7 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         ref = FIRDatabase.database().reference().child("metrics").child("user").child(commitsPer).child(date)
         ref.observe(.value, with: { snapshot in
+            self.users.removeAll()
             for child in snapshot.children.allObjects as? [FIRDataSnapshot] ?? [] {
                 let key = String(child.key)
                 let score = child.childSnapshot(forPath: "score").value!
