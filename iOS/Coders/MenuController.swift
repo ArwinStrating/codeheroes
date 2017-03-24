@@ -22,10 +22,6 @@ class MenuController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let backgroundImage = UIImage(named: "bg")
-        let imageView = UIImageView(image: backgroundImage)
-        imageView.contentMode = .scaleAspectFill
-        self.tableView.backgroundView = imageView
     }
     
     override func didReceiveMemoryWarning() {
