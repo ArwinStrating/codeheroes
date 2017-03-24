@@ -47,10 +47,6 @@ class LoginController: OAuthViewController, UITextFieldDelegate {
         githubButton.layer.borderWidth = 1
         githubButton.layer.borderColor = UIColor.white.cgColor
         githubButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-        
-        // Set navigationbar background
-        let navBackgroundImage:UIImage! = UIImage(named: "bg")
-        UINavigationBar.appearance().setBackgroundImage(navBackgroundImage, for: .default)
     }
     
     override func didReceiveMemoryWarning() {

@@ -10,6 +10,7 @@ import UIKit
 import Foundation
 import Firebase
 import FirebaseAuth
+import PKHUD
 
 class Repository {
     
@@ -37,20 +38,13 @@ class RepositoriesController: UITableViewController {
         refreshControl = UIRefreshControl()
         refreshControl!.addTarget(self, action: #selector(RepositoriesController.refreshData), for: UIControlEvents.valueChanged)
         
-        let githubDark = UIColor(red:36/255.0, green:41/255.0, blue:46/255.0, alpha:1)
-        
-        self.navigationController?.navigationBar.barTintColor = githubDark
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem?.tintColor = UIColor.white
-        let navBackgroundImage:UIImage! = UIImage(named: "bg")
-        UINavigationBar.appearance().setBackgroundImage(navBackgroundImage, for: .default)
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "ProductSans-Regular", size: 17.0)!, NSForegroundColorAttributeName: UIColor.white]
         
         // Activity Indicator
-        myActivityIndicator.center = CGPoint(x: view.frame.size.width  / 2,
-                                             y: view.frame.size.height / 2 - 64);
-        
-        myActivityIndicator.startAnimating()
-        view.addSubview(myActivityIndicator)
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
         
         if self.revealViewController() != nil {
             menuButton.target = revealViewController()
@@ -140,7 +134,7 @@ class RepositoriesController: UITableViewController {
         cell.fullNameLabel.text = repositories[indexPath.row].full_name!
         
         // Hide loader
-        myActivityIndicator.stopAnimating()
+        PKHUD.sharedHUD.hide()
         
         return cell
     }

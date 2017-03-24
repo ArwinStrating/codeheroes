@@ -34,13 +34,8 @@ class ProjectController: UITableViewController {
         refreshControl = UIRefreshControl()
         refreshControl!.addTarget(self, action: #selector(RepositoriesController.refreshData), for: UIControlEvents.valueChanged)
         
-        let githubDark = UIColor(red:36/255.0, green:41/255.0, blue:46/255.0, alpha:1)
-        
-        self.navigationController?.navigationBar.barTintColor = githubDark
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem?.tintColor = UIColor.white
-        let navBackgroundImage:UIImage! = UIImage(named: "bg")
-        UINavigationBar.appearance().setBackgroundImage(navBackgroundImage, for: .default)
         
         // Activity Indicator
         myActivityIndicator.center = CGPoint(x: view.frame.size.width  / 2,

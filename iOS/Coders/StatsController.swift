@@ -62,7 +62,7 @@ class StatsController: UIViewController {
         chartData.addDataSet(chartDataSet)
         barChartView.data = chartData
         
-        chartDataSet.colors = [UIColor(red: 63/255, green: 64/255, blue: 51/255, alpha: 1)]
+        chartDataSet.colors = [UIColor(red: 74/255, green: 168/255, blue: 222/255, alpha: 1)]
         chartData.setValueTextColor(UIColor.white)
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
         

@@ -25,10 +25,11 @@
 		622FF4791E826E95005ECABB /* SWRevealViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 622FF46C1E826E95005ECABB /* SWRevealViewController.h */; };
 		622FF47B1E826F41005ECABB /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 622FF47A1E826F41005ECABB /* GoogleService-Info.plist */; };
 		622FF47D1E826FA0005ECABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622FF47C1E826FA0005ECABB /* Assets.xcassets */; };
-		622FF4821E827007005ECABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622FF47E1E827007005ECABB /* Main.storyboard */; };
-		622FF4831E827007005ECABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622FF4801E827007005ECABB /* LaunchScreen.storyboard */; };
 		624396BD1E5F91A200AF90D0 /* GitgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624396BC1E5F91A200AF90D0 /* GitgameTests.swift */; };
 		624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */; };
+		62AEE5F81E852EEC008C80C5 /* productsans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62AEE5F71E852EE3008C80C5 /* productsans.ttf */; };
+		62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9A1E84332E0083D97C /* Main.storyboard */; };
+		62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */; };
 		E2A50864AFDEA44CA1B1B371 /* Pods_Code_Heroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC85623D7AD0BC0937AD2778 /* Pods_Code_Heroes.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +61,6 @@
 		622FF46C1E826E95005ECABB /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/SWRevealViewController.h; sourceTree = "<absolute>"; };
 		622FF47A1E826F41005ECABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/arwinstrating/Desktop/XCode/codeheroes/iOS/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 		622FF47C1E826FA0005ECABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/Assets.xcassets; sourceTree = "<absolute>"; };
-		622FF47F1E827007005ECABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		622FF4811E827007005ECABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624396A11E5F91A200AF90D0 /* Coders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624396B31E5F91A200AF90D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Coders/Info.plist; sourceTree = "<group>"; };
 		624396B81E5F91A200AF90D0 /* CodersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +69,9 @@
 		624396C81E5F91FB00AF90D0 /* Gitgame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Gitgame-Bridging-Header.h"; path = "/Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Gitgame-Bridging-Header.h"; sourceTree = "<absolute>"; };
 		624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ApexSansBoldST-Regular.ttf"; sourceTree = "<group>"; };
 		627C50E81E81DCA4004C7BC2 /* Gitgame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gitgame.xcdatamodel; sourceTree = "<group>"; };
+		62AEE5F71E852EE3008C80C5 /* productsans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = productsans.ttf; sourceTree = "<group>"; };
+		62C57A9B1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62C57A9D1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6437F6A7575B3CC2BDCEA31F /* Pods-Code HeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code HeroesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Code HeroesTests/Pods-Code HeroesTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC85623D7AD0BC0937AD2778 /* Pods_Code_Heroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_Heroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA161AE797DBDFCB2B8BAF4A /* Pods-Code Heroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Heroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Code Heroes/Pods-Code Heroes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,15 +141,6 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		622FF45A1E826CE1005ECABB /* NIBs */ = {
-			isa = PBXGroup;
-			children = (
-				622FF47E1E827007005ECABB /* Main.storyboard */,
-				622FF4801E827007005ECABB /* LaunchScreen.storyboard */,
-			);
-			name = NIBs;
-			sourceTree = "<group>";
-		};
 		622FF45B1E826CF2005ECABB /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +161,8 @@
 		624396981E5F91A200AF90D0 = {
 			isa = PBXGroup;
 			children = (
+				62C57A9A1E84332E0083D97C /* Main.storyboard */,
+				62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */,
 				624432801E65748D00EF97F8 /* Resources */,
 				624396C71E5F91A700AF90D0 /* SWRevealViewController */,
 				624396A31E5F91A200AF90D0 /* Coders */,
@@ -195,7 +190,6 @@
 				622FF4581E826CB1005ECABB /* Delegate */,
 				622FF4591E826CC5005ECABB /* Controllers */,
 				622FF47C1E826FA0005ECABB /* Assets.xcassets */,
-				622FF45A1E826CE1005ECABB /* NIBs */,
 				622FF45B1E826CF2005ECABB /* Other */,
 			);
 			name = Coders;
@@ -227,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */,
+				62AEE5F71E852EE3008C80C5 /* productsans.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -335,8 +330,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622FF4821E827007005ECABB /* Main.storyboard in Resources */,
-				622FF4831E827007005ECABB /* LaunchScreen.storyboard in Resources */,
+				62AEE5F81E852EEC008C80C5 /* productsans.ttf in Resources */,
+				62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */,
+				62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */,
 				622FF47D1E826FA0005ECABB /* Assets.xcassets in Resources */,
 				624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */,
 			);
@@ -487,22 +483,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		622FF47E1E827007005ECABB /* Main.storyboard */ = {
+		62C57A9A1E84332E0083D97C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				622FF47F1E827007005ECABB /* Base */,
+				62C57A9B1E84332E0083D97C /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
-		622FF4801E827007005ECABB /* LaunchScreen.storyboard */ = {
+		62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				622FF4811E827007005ECABB /* Base */,
+				62C57A9D1E84332E0083D97C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

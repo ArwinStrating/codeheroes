@@ -37,13 +37,9 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl!.addTarget(self, action: #selector(UserController.refreshData), for: UIControlEvents.valueChanged)
         
-        let githubDark = UIColor(red:36/255.0, green:41/255.0, blue:46/255.0, alpha:1)
-        
-        self.navigationController?.navigationBar.barTintColor = githubDark
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem?.tintColor = UIColor.white
-        let navBackgroundImage:UIImage! = UIImage(named: "bg")
-        UINavigationBar.appearance().setBackgroundImage(navBackgroundImage, for: .default)
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "ProductSans-Regular", size: 17.0)!, NSForegroundColorAttributeName: UIColor.white]
         
         // Activity Indicator
         PKHUD.sharedHUD.contentView = PKHUDProgressView()

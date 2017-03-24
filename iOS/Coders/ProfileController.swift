@@ -30,13 +30,11 @@ class ProfileController: UIViewController{
         getScores()
         
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem?.tintColor = UIColor.white
-        let navBackgroundImage:UIImage! = UIImage(named: "bg")
-        UINavigationBar.appearance().setBackgroundImage(navBackgroundImage, for: .default)
         
         // Round picture
         self.avatarImg.layer.cornerRadius = self.avatarImg.frame.size.width / 2;
-        self.avatarImg.layer.borderWidth = 1
-        self.avatarImg.layer.borderColor = UIColor.white.cgColor
+        self.avatarImg.layer.borderWidth = 2
+        self.avatarImg.layer.borderColor = UIColor(red: 74/255, green: 168/255, blue: 222/255, alpha: 1).cgColor
         self.avatarImg.clipsToBounds = true;
         
         // Activity Indicator
