@@ -78,10 +78,14 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         else if(segmentIndex == 1){
             commitsPer = "commits_per_week"
-            let weekOfYear = String(calendar.component(.weekOfYear, from: Date()))
+            let weekOfYear = calendar.component(.weekOfYear, from: Date())
             let year = String(calendar.component(.year, from: Date()))
-            date = year + "" + weekOfYear
-            print(weekOfYear)
+            date = year + "" + String(weekOfYear)
+            formatter.dateFormat = "EEEE"
+            let dateType = formatter.string(from: dateObj)
+            if(dateType == "Sunday") {
+                date = year + "" + String(weekOfYear-1)
+            }
         }
         else if(segmentIndex == 2){
             commitsPer = "commits_per_month"
