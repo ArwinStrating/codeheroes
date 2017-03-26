@@ -9,11 +9,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="productsans.ttf">
-            <string>ProductSans-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -31,32 +26,29 @@
                                 <rect key="frame" x="-2" y="0.0" width="379" height="667"/>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.53333333329999999" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="41f-t8-YoW">
-                                <rect key="frame" x="34" y="297.5" width="307" height="73"/>
-                                <fontDescription key="fontDescription" name="ProductSans-Regular" family="Product Sans" pointSize="60"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="pe5-pJ-Rts">
+                                <rect key="frame" x="16" y="269" width="343" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pe5-pJ-Rts" secondAttribute="trailing" id="3CI-SX-4vR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fE6-ka-EW7" secondAttribute="trailing" constant="-18" id="B2x-La-PyR"/>
                             <constraint firstAttribute="bottomMargin" secondItem="fE6-ka-EW7" secondAttribute="bottom" id="BXY-Br-Bt8"/>
-                            <constraint firstItem="41f-t8-YoW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DM0-cj-PD7"/>
-                            <constraint firstItem="41f-t8-YoW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JWN-MG-TJf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="41f-t8-YoW" secondAttribute="trailing" constant="18" id="WPO-z3-p8f"/>
-                            <constraint firstItem="41f-t8-YoW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="18" id="eh0-9i-vYR"/>
+                            <constraint firstItem="pe5-pJ-Rts" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="249" id="ENd-W9-ayZ"/>
+                            <constraint firstItem="pe5-pJ-Rts" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="LdY-Bf-L8a"/>
+                            <constraint firstItem="pe5-pJ-Rts" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZuQ-AV-yru"/>
                             <constraint firstItem="fE6-ka-EW7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-18" id="kzS-v7-R75"/>
                             <constraint firstItem="fE6-ka-EW7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="mCM-V6-LlO"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="titleLabel" destination="41f-t8-YoW" id="c5r-L1-3GJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch" width="500" height="500"/>
+    </resources>
 </document>

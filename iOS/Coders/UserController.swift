@@ -81,6 +81,7 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let weekOfYear = String(calendar.component(.weekOfYear, from: Date()))
             let year = String(calendar.component(.year, from: Date()))
             date = year + "" + weekOfYear
+            print(weekOfYear)
         }
         else if(segmentIndex == 2){
             commitsPer = "commits_per_month"
