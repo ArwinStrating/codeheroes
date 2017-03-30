@@ -419,6 +419,7 @@
                                         <connections>
                                             <outlet property="scoreLabel" destination="0fr-fF-Z3s" id="mU7-CL-cex"/>
                                             <outlet property="userLabel" destination="jxG-3S-DHj" id="bVG-Ii-DCv"/>
+                                            <segue destination="W6Z-0p-hS0" kind="show" identifier="showDetail" id="M15-lg-l0v"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -450,6 +451,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pa-If-NJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1428" y="1547"/>
+        </scene>
+        <!--User Detail Controller-->
+        <scene sceneID="CVj-xY-YyY">
+            <objects>
+                <viewController id="W6Z-0p-hS0" customClass="UserDetailController" customModule="Coders" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ztF-Kh-Xqu"/>
+                        <viewControllerLayoutGuide type="bottom" id="MC6-JK-G50"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9rK-dt-MAt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ql9-Xx-cWC">
+                                <rect key="frame" x="-2" y="64" width="379" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nod-Eg-WpV">
+                                        <rect key="frame" x="126.5" y="25" width="125" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Nod-Eg-WpV" secondAttribute="height" multiplier="1:1" id="9cG-1o-rrY"/>
+                                            <constraint firstAttribute="height" constant="125" id="ksh-hX-YgH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fq-Xm-VUm">
+                                        <rect key="frame" x="168" y="171" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="ProductSans-Regular" family="Product Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7P2-ex-4vU"/>
+                                    <constraint firstItem="3fq-Xm-VUm" firstAttribute="centerX" secondItem="Ql9-Xx-cWC" secondAttribute="centerX" id="K9D-vK-AKq"/>
+                                    <constraint firstItem="Nod-Eg-WpV" firstAttribute="top" secondItem="Ql9-Xx-cWC" secondAttribute="top" constant="25" id="WV0-un-Icm"/>
+                                    <constraint firstItem="Nod-Eg-WpV" firstAttribute="centerX" secondItem="Ql9-Xx-cWC" secondAttribute="centerX" id="gfC-8a-rE3"/>
+                                    <constraint firstItem="3fq-Xm-VUm" firstAttribute="top" secondItem="Nod-Eg-WpV" secondAttribute="bottom" constant="25" id="wXN-x2-TOj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ql9-Xx-cWC" firstAttribute="top" secondItem="ztF-Kh-Xqu" secondAttribute="bottom" id="4t0-Vy-coT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ql9-Xx-cWC" secondAttribute="trailing" constant="-18" id="NxN-ns-5Jc"/>
+                            <constraint firstItem="Ql9-Xx-cWC" firstAttribute="leading" secondItem="9rK-dt-MAt" secondAttribute="leadingMargin" constant="-18" id="kFt-Vw-gwg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImg" destination="Nod-Eg-WpV" id="ltF-ZO-BkV"/>
+                        <outlet property="nameLabel" destination="3fq-Xm-VUm" id="ZbH-cd-ZiX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5t-hH-jcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272.8000000000002" y="1546.776611694153"/>
         </scene>
         <!--Profile-->
         <scene sceneID="le7-3l-kze">
@@ -765,7 +821,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vEc-K3-5rM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="1202"/>
+            <point key="canvasLocation" x="2274" y="777"/>
         </scene>
     </scenes>
     <resources>

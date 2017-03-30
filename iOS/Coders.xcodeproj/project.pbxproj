@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B4DD0D3FC9B429C9DEA9BEA /* Pods_Code_HeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */; };
+		622FD3481E8C55A600DCF083 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FD3471E8C55A600DCF083 /* UserDetailController.swift */; };
 		622FF4561E826B8A005ECABB /* Gitgame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 627C50E71E81DCA4004C7BC2 /* Gitgame.xcdatamodeld */; };
 		622FF45F1E826E0B005ECABB /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF45E1E826E0A005ECABB /* MenuController.swift */; };
 		622FF46D1E826E95005ECABB /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622FF4601E826E95005ECABB /* StatsController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_HeroesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		622FD3471E8C55A600DCF083 /* UserDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = SOURCE_ROOT; };
 		622FF45E1E826E0A005ECABB /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/MenuController.swift; sourceTree = "<absolute>"; };
 		622FF4601E826E95005ECABB /* StatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatsController.swift; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/StatsController.swift; sourceTree = "<absolute>"; };
 		622FF4611E826E95005ECABB /* RepositoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepositoriesController.swift; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/RepositoriesController.swift; sourceTree = "<absolute>"; };
@@ -137,6 +139,7 @@
 				622FF4611E826E95005ECABB /* RepositoriesController.swift */,
 				622FF4601E826E95005ECABB /* StatsController.swift */,
 				622FF45E1E826E0A005ECABB /* MenuController.swift */,
+				622FD3471E8C55A600DCF083 /* UserDetailController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				622FF4761E826E95005ECABB /* AppDelegate.swift in Sources */,
 				622FF4771E826E95005ECABB /* RepoTableViewCell.swift in Sources */,
 				622FF4781E826E95005ECABB /* SWRevealViewController.m in Sources */,
+				622FD3481E8C55A600DCF083 /* UserDetailController.swift in Sources */,
 				622FF4791E826E95005ECABB /* SWRevealViewController.h in Sources */,
 				622FF45F1E826E0B005ECABB /* MenuController.swift in Sources */,
 				622FF4561E826B8A005ECABB /* Gitgame.xcdatamodeld in Sources */,

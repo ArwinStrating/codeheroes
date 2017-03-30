@@ -27,12 +27,12 @@
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.53333333329999999" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="pe5-pJ-Rts">
-                                <rect key="frame" x="16" y="269" width="343" height="128"/>
+                                <rect key="frame" x="16" y="269" width="361" height="129"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="pe5-pJ-Rts" secondAttribute="trailing" id="3CI-SX-4vR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pe5-pJ-Rts" secondAttribute="trailing" constant="-18" id="3CI-SX-4vR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fE6-ka-EW7" secondAttribute="trailing" constant="-18" id="B2x-La-PyR"/>
                             <constraint firstAttribute="bottomMargin" secondItem="fE6-ka-EW7" secondAttribute="bottom" id="BXY-Br-Bt8"/>
                             <constraint firstItem="pe5-pJ-Rts" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="249" id="ENd-W9-ayZ"/>
