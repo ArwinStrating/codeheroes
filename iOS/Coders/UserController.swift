@@ -154,6 +154,24 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    private func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+        
+        let sender = users[indexPath.row]
+        self.performSegue(withIdentifier: "showDetail", sender: sender)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if (segue.identifier == "showDetail") {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let svc = segue.destination as! UserDetailController
+                svc.user = users.sorted(by: { $0.score! > $1.score! })[indexPath.row]
+                svc.segmentIndex = segmentControlIndex
+            }
+        }
+    }
+
+    
     @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0) {
             segmentControlIndex = sender.selectedSegmentIndex
