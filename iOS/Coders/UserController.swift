@@ -98,8 +98,9 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.users.removeAll()
             for child in snapshot.children.allObjects as? [FIRDataSnapshot] ?? [] {
                 let key = String(child.key)
+                let name = child.childSnapshot(forPath: "name").value!
                 let score = child.childSnapshot(forPath: "score").value!
-                let user = [ "name": key!, "score": score] as [String : Any]
+                let user = [ "name": name, "score": score] as [String : Any]
                 self.users.append(User(json: user as NSDictionary))
                 
             }
