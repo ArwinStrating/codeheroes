@@ -76,8 +76,8 @@ class UserDetailController: UIViewController {
             date = formatter.string(from: dateObj)
         }
 
-        nameLabel.text = user.name!
-        
+        nameLabel.text = user.fullname
+        print(date)
         ref = FIRDatabase.database().reference().child("metrics").child("user").child(commitsPer).child(date)
         ref.observe(.value, with: { snapshot in
             let userData = snapshot.childSnapshot(forPath: self.user.name!)

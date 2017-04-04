@@ -14,10 +14,12 @@ class User {
     
     var name: String?
     var score: Int?
+    var fullname: String?
     
     init(json: NSDictionary) {
         self.name = json["name"] as? String
         self.score = json["score"] as? Int
+        self.fullname = json["fullname"] as? String
     }
 }
 
@@ -100,7 +102,7 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let key = String(child.key)
                 let name = child.childSnapshot(forPath: "name").value!
                 let score = child.childSnapshot(forPath: "score").value!
-                let user = [ "name": name, "score": score] as [String : Any]
+                let user = [ "name": key, "score": score, "fullname": name] as [String : Any]
                 self.users.append(User(json: user as NSDictionary))
                 
             }
@@ -146,7 +148,7 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Instantiate cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! UserTableViewCell
         
-        cell.userLabel.text = users.sorted(by: { $0.score! > $1.score! })[indexPath.row].name!
+        cell.userLabel.text = users.sorted(by: { $0.score! > $1.score! })[indexPath.row].fullname!
         cell.scoreLabel.text = String(users.sorted(by: { $0.score! > $1.score! })[indexPath.row].score!)
     
         // Hide loader
