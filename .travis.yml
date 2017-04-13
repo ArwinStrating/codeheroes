@@ -1,7 +1,7 @@
-language: objective-c
+language: swift
 
 osx_image: xcode8.3
 
-podfile: iOS/risicoanalyse/
+podfile: iOS/
 
-script: xcodebuild clean build -workspace iOS/risicoanalyse/risicoanalyse.xcworkspace/ -scheme risicoanalyse -destination "platform=iOS Simulator,name=iPad Air"
+script: xcodebuild clean build -workspace iOS/Coders.xcworkspace/ -scheme coders -destination "platform=iOS Simulator,name=iPhone 7"
