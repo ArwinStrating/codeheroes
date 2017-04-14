@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B4DD0D3FC9B429C9DEA9BEA /* Pods_Code_HeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */; };
-		622FF4561E826B8A005ECABB /* Gitgame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 627C50E71E81DCA4004C7BC2 /* Gitgame.xcdatamodeld */; };
-		622FF47B1E826F41005ECABB /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 622FF47A1E826F41005ECABB /* GoogleService-Info.plist */; };
 		622FF47D1E826FA0005ECABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622FF47C1E826FA0005ECABB /* Assets.xcassets */; };
 		624396BD1E5F91A200AF90D0 /* GitgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624396BC1E5F91A200AF90D0 /* GitgameTests.swift */; };
 		624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */; };
@@ -27,6 +25,9 @@
 		62A6AB7F1EA0FD7E00972E66 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB721EA0FD7E00972E66 /* UserController.swift */; };
 		62A6AB801EA0FD7E00972E66 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */; };
 		62A6AB811EA0FD7E00972E66 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB741EA0FD7E00972E66 /* WebViewController.swift */; };
+		62A6AB841EA0FEDD00972E66 /* Gitgame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB821EA0FEDD00972E66 /* Gitgame.xcdatamodeld */; };
+		62A6AB851EA0FEDD00972E66 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62A6AB831EA0FEDD00972E66 /* Info.plist */; };
+		62A6AB871EA0FEE500972E66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62A6AB861EA0FEE500972E66 /* GoogleService-Info.plist */; };
 		62AEE5F81E852EEC008C80C5 /* productsans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62AEE5F71E852EE3008C80C5 /* productsans.ttf */; };
 		62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9A1E84332E0083D97C /* Main.storyboard */; };
 		62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */; };
@@ -45,15 +46,12 @@
 
 /* Begin PBXFileReference section */
 		5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_HeroesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		622FF47A1E826F41005ECABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/arwinstrating/Desktop/XCode/codeheroes/iOS/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 		622FF47C1E826FA0005ECABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/Assets.xcassets; sourceTree = "<absolute>"; };
 		624396A11E5F91A200AF90D0 /* Coders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coders.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		624396B31E5F91A200AF90D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Coders/Info.plist; sourceTree = "<group>"; };
 		624396B81E5F91A200AF90D0 /* CodersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		624396BC1E5F91A200AF90D0 /* GitgameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitgameTests.swift; path = CodersTests/GitgameTests.swift; sourceTree = "<group>"; };
 		624396BE1E5F91A200AF90D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CodersTests/Info.plist; sourceTree = "<group>"; };
 		624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ApexSansBoldST-Regular.ttf"; sourceTree = "<group>"; };
-		627C50E81E81DCA4004C7BC2 /* Gitgame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gitgame.xcdatamodel; sourceTree = "<group>"; };
 		62A6AB641EA0FD6100972E66 /* UserDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = SOURCE_ROOT; };
 		62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gitgame-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Coders/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -70,6 +68,8 @@
 		62A6AB721EA0FD7E00972E66 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = Coders/UserController.swift; sourceTree = SOURCE_ROOT; };
 		62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Coders/UserTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		62A6AB741EA0FD7E00972E66 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Coders/WebViewController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB831EA0FEDD00972E66 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Coders/Info.plist; sourceTree = SOURCE_ROOT; };
+		62A6AB861EA0FEE500972E66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		62AEE5F71E852EE3008C80C5 /* productsans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = productsans.ttf; sourceTree = "<group>"; };
 		62C57A9B1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62C57A9D1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,16 +109,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		622FF45B1E826CF2005ECABB /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				622FF47A1E826F41005ECABB /* GoogleService-Info.plist */,
-				624396B31E5F91A200AF90D0 /* Info.plist */,
-				627C50E71E81DCA4004C7BC2 /* Gitgame.xcdatamodeld */,
-			);
-			name = Other;
-			sourceTree = "<group>";
-		};
 		622FF45C1E826D57005ECABB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +143,9 @@
 		624396A31E5F91A200AF90D0 /* Coders */ = {
 			isa = PBXGroup;
 			children = (
+				62A6AB861EA0FEE500972E66 /* GoogleService-Info.plist */,
+				62A6AB821EA0FEDD00972E66 /* Gitgame.xcdatamodeld */,
+				62A6AB831EA0FEDD00972E66 /* Info.plist */,
 				62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */,
 				62A6AB681EA0FD7E00972E66 /* LoginController.swift */,
 				62A6AB691EA0FD7E00972E66 /* MenuController.swift */,
@@ -170,7 +163,6 @@
 				62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */,
 				62A6AB641EA0FD6100972E66 /* UserDetailController.swift */,
 				622FF47C1E826FA0005ECABB /* Assets.xcassets */,
-				622FF45B1E826CF2005ECABB /* Other */,
 			);
 			name = Coders;
 			path = "Code Heroes";
@@ -301,9 +293,11 @@
 			files = (
 				62AEE5F81E852EEC008C80C5 /* productsans.ttf in Resources */,
 				62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */,
+				62A6AB851EA0FEDD00972E66 /* Info.plist in Resources */,
 				62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */,
 				622FF47D1E826FA0005ECABB /* Assets.xcassets in Resources */,
 				624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */,
+				62A6AB871EA0FEE500972E66 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,13 +411,12 @@
 				62A6AB7E1EA0FD7E00972E66 /* SWRevealViewController.m in Sources */,
 				62A6AB781EA0FD7E00972E66 /* ProfileController.swift in Sources */,
 				62A6AB7A1EA0FD7E00972E66 /* ProjectTableViewCell.swift in Sources */,
+				62A6AB841EA0FEDD00972E66 /* Gitgame.xcdatamodeld in Sources */,
 				62A6AB751EA0FD7E00972E66 /* AppDelegate.swift in Sources */,
 				62A6AB801EA0FD7E00972E66 /* UserTableViewCell.swift in Sources */,
 				62A6AB7F1EA0FD7E00972E66 /* UserController.swift in Sources */,
 				62A6AB651EA0FD6100972E66 /* UserDetailController.swift in Sources */,
 				62A6AB7C1EA0FD7E00972E66 /* RepoTableViewCell.swift in Sources */,
-				622FF47B1E826F41005ECABB /* GoogleService-Info.plist in Sources */,
-				622FF4561E826B8A005ECABB /* Gitgame.xcdatamodeld in Sources */,
 				62A6AB7D1EA0FD7E00972E66 /* StatsController.swift in Sources */,
 				62A6AB791EA0FD7E00972E66 /* ProjectController.swift in Sources */,
 				62A6AB7B1EA0FD7E00972E66 /* RepositoriesController.swift in Sources */,
@@ -714,12 +707,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		627C50E71E81DCA4004C7BC2 /* Gitgame.xcdatamodeld */ = {
+		62A6AB821EA0FEDD00972E66 /* Gitgame.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				627C50E81E81DCA4004C7BC2 /* Gitgame.xcdatamodel */,
 			);
-			currentVersion = 627C50E81E81DCA4004C7BC2 /* Gitgame.xcdatamodel */;
 			name = Gitgame.xcdatamodeld;
 			path = ../Coders/Gitgame.xcdatamodeld;
 			sourceTree = "<group>";
