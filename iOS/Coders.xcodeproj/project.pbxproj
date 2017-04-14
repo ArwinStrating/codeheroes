@@ -8,26 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1B4DD0D3FC9B429C9DEA9BEA /* Pods_Code_HeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */; };
-		622BA0861E93ACCF00410310 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEBAD71E93AB53000FB62F /* SWRevealViewController.m */; };
 		622FF4561E826B8A005ECABB /* Gitgame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 627C50E71E81DCA4004C7BC2 /* Gitgame.xcdatamodeld */; };
 		622FF47B1E826F41005ECABB /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 622FF47A1E826F41005ECABB /* GoogleService-Info.plist */; };
 		622FF47D1E826FA0005ECABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622FF47C1E826FA0005ECABB /* Assets.xcassets */; };
 		624396BD1E5F91A200AF90D0 /* GitgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624396BC1E5F91A200AF90D0 /* GitgameTests.swift */; };
 		624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */; };
-		62A6AB3B1EA0F61000972E66 /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB3A1EA0F61000972E66 /* StatsController.swift */; };
-		62A6AB471EA0F6AF00972E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB3C1EA0F6AF00972E66 /* AppDelegate.swift */; };
-		62A6AB481EA0F6AF00972E66 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB3D1EA0F6AF00972E66 /* LoginController.swift */; };
-		62A6AB491EA0F6AF00972E66 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB3E1EA0F6AF00972E66 /* MenuController.swift */; };
-		62A6AB4A1EA0F6AF00972E66 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB3F1EA0F6AF00972E66 /* ProfileController.swift */; };
-		62A6AB4B1EA0F6AF00972E66 /* ProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB401EA0F6AF00972E66 /* ProjectController.swift */; };
-		62A6AB4C1EA0F6AF00972E66 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB411EA0F6AF00972E66 /* ProjectTableViewCell.swift */; };
-		62A6AB4D1EA0F6AF00972E66 /* RepositoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB421EA0F6AF00972E66 /* RepositoriesController.swift */; };
-		62A6AB4E1EA0F6AF00972E66 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB431EA0F6AF00972E66 /* RepoTableViewCell.swift */; };
-		62A6AB4F1EA0F6AF00972E66 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB441EA0F6AF00972E66 /* UserController.swift */; };
-		62A6AB501EA0F6AF00972E66 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB451EA0F6AF00972E66 /* UserTableViewCell.swift */; };
-		62A6AB511EA0F6AF00972E66 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB461EA0F6AF00972E66 /* WebViewController.swift */; };
-		62A6AB531EA0F78300972E66 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB521EA0F78300972E66 /* UserDetailController.swift */; };
-		62A6AB551EA0F96D00972E66 /* Gitgame-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB541EA0F96D00972E66 /* Gitgame-Bridging-Header.h */; };
+		62A6AB651EA0FD6100972E66 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB641EA0FD6100972E66 /* UserDetailController.swift */; };
+		62A6AB751EA0FD7E00972E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */; };
+		62A6AB761EA0FD7E00972E66 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB681EA0FD7E00972E66 /* LoginController.swift */; };
+		62A6AB771EA0FD7E00972E66 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB691EA0FD7E00972E66 /* MenuController.swift */; };
+		62A6AB781EA0FD7E00972E66 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB6A1EA0FD7E00972E66 /* ProfileController.swift */; };
+		62A6AB791EA0FD7E00972E66 /* ProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB6B1EA0FD7E00972E66 /* ProjectController.swift */; };
+		62A6AB7A1EA0FD7E00972E66 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB6C1EA0FD7E00972E66 /* ProjectTableViewCell.swift */; };
+		62A6AB7B1EA0FD7E00972E66 /* RepositoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB6D1EA0FD7E00972E66 /* RepositoriesController.swift */; };
+		62A6AB7C1EA0FD7E00972E66 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB6E1EA0FD7E00972E66 /* RepoTableViewCell.swift */; };
+		62A6AB7D1EA0FD7E00972E66 /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB6F1EA0FD7E00972E66 /* StatsController.swift */; };
+		62A6AB7E1EA0FD7E00972E66 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB711EA0FD7E00972E66 /* SWRevealViewController.m */; };
+		62A6AB7F1EA0FD7E00972E66 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB721EA0FD7E00972E66 /* UserController.swift */; };
+		62A6AB801EA0FD7E00972E66 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */; };
+		62A6AB811EA0FD7E00972E66 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB741EA0FD7E00972E66 /* WebViewController.swift */; };
 		62AEE5F81E852EEC008C80C5 /* productsans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62AEE5F71E852EE3008C80C5 /* productsans.ttf */; };
 		62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9A1E84332E0083D97C /* Main.storyboard */; };
 		62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */; };
@@ -55,25 +54,25 @@
 		624396BE1E5F91A200AF90D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CodersTests/Info.plist; sourceTree = "<group>"; };
 		624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ApexSansBoldST-Regular.ttf"; sourceTree = "<group>"; };
 		627C50E81E81DCA4004C7BC2 /* Gitgame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gitgame.xcdatamodel; sourceTree = "<group>"; };
-		62A6AB3A1EA0F61000972E66 /* StatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatsController.swift; path = ../Coders/StatsController.swift; sourceTree = "<group>"; };
-		62A6AB3C1EA0F6AF00972E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../Coders/AppDelegate.swift; sourceTree = "<group>"; };
-		62A6AB3D1EA0F6AF00972E66 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = ../Coders/LoginController.swift; sourceTree = "<group>"; };
-		62A6AB3E1EA0F6AF00972E66 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = ../Coders/MenuController.swift; sourceTree = "<group>"; };
-		62A6AB3F1EA0F6AF00972E66 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileController.swift; path = ../Coders/ProfileController.swift; sourceTree = "<group>"; };
-		62A6AB401EA0F6AF00972E66 /* ProjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProjectController.swift; path = ../Coders/ProjectController.swift; sourceTree = "<group>"; };
-		62A6AB411EA0F6AF00972E66 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProjectTableViewCell.swift; path = ../Coders/ProjectTableViewCell.swift; sourceTree = "<group>"; };
-		62A6AB421EA0F6AF00972E66 /* RepositoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepositoriesController.swift; path = ../Coders/RepositoriesController.swift; sourceTree = "<group>"; };
-		62A6AB431EA0F6AF00972E66 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepoTableViewCell.swift; path = ../Coders/RepoTableViewCell.swift; sourceTree = "<group>"; };
-		62A6AB441EA0F6AF00972E66 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = ../Coders/UserController.swift; sourceTree = "<group>"; };
-		62A6AB451EA0F6AF00972E66 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = ../Coders/UserTableViewCell.swift; sourceTree = "<group>"; };
-		62A6AB461EA0F6AF00972E66 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = ../Coders/WebViewController.swift; sourceTree = "<group>"; };
-		62A6AB521EA0F78300972E66 /* UserDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailController.swift; path = ../UserDetailController.swift; sourceTree = "<group>"; };
-		62A6AB541EA0F96D00972E66 /* Gitgame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Gitgame-Bridging-Header.h"; path = "../Gitgame-Bridging-Header.h"; sourceTree = "<group>"; };
+		62A6AB641EA0FD6100972E66 /* UserDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gitgame-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Coders/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB681EA0FD7E00972E66 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = Coders/LoginController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB691EA0FD7E00972E66 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = Coders/MenuController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB6A1EA0FD7E00972E66 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileController.swift; path = Coders/ProfileController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB6B1EA0FD7E00972E66 /* ProjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectController.swift; path = Coders/ProjectController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB6C1EA0FD7E00972E66 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectTableViewCell.swift; path = Coders/ProjectTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB6D1EA0FD7E00972E66 /* RepositoriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoriesController.swift; path = Coders/RepositoriesController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB6E1EA0FD7E00972E66 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepoTableViewCell.swift; path = Coders/RepoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB6F1EA0FD7E00972E66 /* StatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatsController.swift; path = Coders/StatsController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB701EA0FD7E00972E66 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Coders/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
+		62A6AB711EA0FD7E00972E66 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Coders/SWRevealViewController.m; sourceTree = SOURCE_ROOT; };
+		62A6AB721EA0FD7E00972E66 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = Coders/UserController.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Coders/UserTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		62A6AB741EA0FD7E00972E66 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Coders/WebViewController.swift; sourceTree = SOURCE_ROOT; };
 		62AEE5F71E852EE3008C80C5 /* productsans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = productsans.ttf; sourceTree = "<group>"; };
 		62C57A9B1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62C57A9D1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		62DEBAD71E93AB53000FB62F /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/SWRevealViewController.m; sourceTree = "<absolute>"; };
-		62DEBAD91E93ABE8000FB62F /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/SWRevealViewController.h; sourceTree = "<absolute>"; };
 		6437F6A7575B3CC2BDCEA31F /* Pods-Code HeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code HeroesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Code HeroesTests/Pods-Code HeroesTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC85623D7AD0BC0937AD2778 /* Pods_Code_Heroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_Heroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA161AE797DBDFCB2B8BAF4A /* Pods-Code Heroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Heroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Code Heroes/Pods-Code Heroes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,40 +109,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		622FF4571E826CA5005ECABB /* models */ = {
-			isa = PBXGroup;
-			children = (
-				62A6AB411EA0F6AF00972E66 /* ProjectTableViewCell.swift */,
-				62A6AB431EA0F6AF00972E66 /* RepoTableViewCell.swift */,
-				62A6AB451EA0F6AF00972E66 /* UserTableViewCell.swift */,
-			);
-			name = models;
-			sourceTree = "<group>";
-		};
-		622FF4581E826CB1005ECABB /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				62A6AB3C1EA0F6AF00972E66 /* AppDelegate.swift */,
-			);
-			name = Delegate;
-			sourceTree = "<group>";
-		};
-		622FF4591E826CC5005ECABB /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				62A6AB521EA0F78300972E66 /* UserDetailController.swift */,
-				62A6AB3D1EA0F6AF00972E66 /* LoginController.swift */,
-				62A6AB3E1EA0F6AF00972E66 /* MenuController.swift */,
-				62A6AB3F1EA0F6AF00972E66 /* ProfileController.swift */,
-				62A6AB401EA0F6AF00972E66 /* ProjectController.swift */,
-				62A6AB421EA0F6AF00972E66 /* RepositoriesController.swift */,
-				62A6AB441EA0F6AF00972E66 /* UserController.swift */,
-				62A6AB461EA0F6AF00972E66 /* WebViewController.swift */,
-				62A6AB3A1EA0F61000972E66 /* StatsController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
 		622FF45B1E826CF2005ECABB /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +132,6 @@
 				62C57A9A1E84332E0083D97C /* Main.storyboard */,
 				62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */,
 				624432801E65748D00EF97F8 /* Resources */,
-				624396C71E5F91A700AF90D0 /* SWRevealViewController */,
 				624396A31E5F91A200AF90D0 /* Coders */,
 				624396BB1E5F91A200AF90D0 /* CodersTests */,
 				622FF45C1E826D57005ECABB /* Products */,
@@ -189,9 +153,22 @@
 		624396A31E5F91A200AF90D0 /* Coders */ = {
 			isa = PBXGroup;
 			children = (
-				622FF4571E826CA5005ECABB /* models */,
-				622FF4581E826CB1005ECABB /* Delegate */,
-				622FF4591E826CC5005ECABB /* Controllers */,
+				62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */,
+				62A6AB681EA0FD7E00972E66 /* LoginController.swift */,
+				62A6AB691EA0FD7E00972E66 /* MenuController.swift */,
+				62A6AB6A1EA0FD7E00972E66 /* ProfileController.swift */,
+				62A6AB6B1EA0FD7E00972E66 /* ProjectController.swift */,
+				62A6AB6C1EA0FD7E00972E66 /* ProjectTableViewCell.swift */,
+				62A6AB6D1EA0FD7E00972E66 /* RepositoriesController.swift */,
+				62A6AB6E1EA0FD7E00972E66 /* RepoTableViewCell.swift */,
+				62A6AB6F1EA0FD7E00972E66 /* StatsController.swift */,
+				62A6AB701EA0FD7E00972E66 /* SWRevealViewController.h */,
+				62A6AB711EA0FD7E00972E66 /* SWRevealViewController.m */,
+				62A6AB721EA0FD7E00972E66 /* UserController.swift */,
+				62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */,
+				62A6AB741EA0FD7E00972E66 /* WebViewController.swift */,
+				62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */,
+				62A6AB641EA0FD6100972E66 /* UserDetailController.swift */,
 				622FF47C1E826FA0005ECABB /* Assets.xcassets */,
 				622FF45B1E826CF2005ECABB /* Other */,
 			);
@@ -207,17 +184,6 @@
 			);
 			name = CodersTests;
 			path = "Code HeroesTests";
-			sourceTree = "<group>";
-		};
-		624396C71E5F91A700AF90D0 /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				62DEBAD71E93AB53000FB62F /* SWRevealViewController.m */,
-				62DEBAD91E93ABE8000FB62F /* SWRevealViewController.h */,
-				62A6AB541EA0F96D00972E66 /* Gitgame-Bridging-Header.h */,
-			);
-			name = SWRevealViewController;
-			path = "Code Heroes";
 			sourceTree = "<group>";
 		};
 		624432801E65748D00EF97F8 /* Resources */ = {
@@ -448,23 +414,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62A6AB551EA0F96D00972E66 /* Gitgame-Bridging-Header.h in Sources */,
-				62A6AB531EA0F78300972E66 /* UserDetailController.swift in Sources */,
-				62A6AB471EA0F6AF00972E66 /* AppDelegate.swift in Sources */,
-				62A6AB481EA0F6AF00972E66 /* LoginController.swift in Sources */,
-				62A6AB491EA0F6AF00972E66 /* MenuController.swift in Sources */,
-				62A6AB4A1EA0F6AF00972E66 /* ProfileController.swift in Sources */,
-				62A6AB4B1EA0F6AF00972E66 /* ProjectController.swift in Sources */,
-				62A6AB4C1EA0F6AF00972E66 /* ProjectTableViewCell.swift in Sources */,
-				62A6AB4D1EA0F6AF00972E66 /* RepositoriesController.swift in Sources */,
-				62A6AB4E1EA0F6AF00972E66 /* RepoTableViewCell.swift in Sources */,
-				62A6AB4F1EA0F6AF00972E66 /* UserController.swift in Sources */,
-				62A6AB501EA0F6AF00972E66 /* UserTableViewCell.swift in Sources */,
-				62A6AB511EA0F6AF00972E66 /* WebViewController.swift in Sources */,
-				62A6AB3B1EA0F61000972E66 /* StatsController.swift in Sources */,
-				622BA0861E93ACCF00410310 /* SWRevealViewController.m in Sources */,
+				62A6AB7E1EA0FD7E00972E66 /* SWRevealViewController.m in Sources */,
+				62A6AB781EA0FD7E00972E66 /* ProfileController.swift in Sources */,
+				62A6AB7A1EA0FD7E00972E66 /* ProjectTableViewCell.swift in Sources */,
+				62A6AB751EA0FD7E00972E66 /* AppDelegate.swift in Sources */,
+				62A6AB801EA0FD7E00972E66 /* UserTableViewCell.swift in Sources */,
+				62A6AB7F1EA0FD7E00972E66 /* UserController.swift in Sources */,
+				62A6AB651EA0FD6100972E66 /* UserDetailController.swift in Sources */,
+				62A6AB7C1EA0FD7E00972E66 /* RepoTableViewCell.swift in Sources */,
 				622FF47B1E826F41005ECABB /* GoogleService-Info.plist in Sources */,
 				622FF4561E826B8A005ECABB /* Gitgame.xcdatamodeld in Sources */,
+				62A6AB7D1EA0FD7E00972E66 /* StatsController.swift in Sources */,
+				62A6AB791EA0FD7E00972E66 /* ProjectController.swift in Sources */,
+				62A6AB7B1EA0FD7E00972E66 /* RepositoriesController.swift in Sources */,
+				62A6AB771EA0FD7E00972E66 /* MenuController.swift in Sources */,
+				62A6AB761EA0FD7E00972E66 /* LoginController.swift in Sources */,
+				62A6AB811EA0FD7E00972E66 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
