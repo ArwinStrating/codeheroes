@@ -27,6 +27,7 @@
 		62A6AB501EA0F6AF00972E66 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB451EA0F6AF00972E66 /* UserTableViewCell.swift */; };
 		62A6AB511EA0F6AF00972E66 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB461EA0F6AF00972E66 /* WebViewController.swift */; };
 		62A6AB531EA0F78300972E66 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB521EA0F78300972E66 /* UserDetailController.swift */; };
+		62A6AB551EA0F96D00972E66 /* Gitgame-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB541EA0F96D00972E66 /* Gitgame-Bridging-Header.h */; };
 		62AEE5F81E852EEC008C80C5 /* productsans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62AEE5F71E852EE3008C80C5 /* productsans.ttf */; };
 		62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9A1E84332E0083D97C /* Main.storyboard */; };
 		62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */; };
@@ -52,7 +53,6 @@
 		624396B81E5F91A200AF90D0 /* CodersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		624396BC1E5F91A200AF90D0 /* GitgameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitgameTests.swift; path = CodersTests/GitgameTests.swift; sourceTree = "<group>"; };
 		624396BE1E5F91A200AF90D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CodersTests/Info.plist; sourceTree = "<group>"; };
-		624396C81E5F91FB00AF90D0 /* Gitgame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Gitgame-Bridging-Header.h"; path = "/Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Gitgame-Bridging-Header.h"; sourceTree = "<absolute>"; };
 		624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ApexSansBoldST-Regular.ttf"; sourceTree = "<group>"; };
 		627C50E81E81DCA4004C7BC2 /* Gitgame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gitgame.xcdatamodel; sourceTree = "<group>"; };
 		62A6AB3A1EA0F61000972E66 /* StatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatsController.swift; path = ../Coders/StatsController.swift; sourceTree = "<group>"; };
@@ -68,6 +68,7 @@
 		62A6AB451EA0F6AF00972E66 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = ../Coders/UserTableViewCell.swift; sourceTree = "<group>"; };
 		62A6AB461EA0F6AF00972E66 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = ../Coders/WebViewController.swift; sourceTree = "<group>"; };
 		62A6AB521EA0F78300972E66 /* UserDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailController.swift; path = ../UserDetailController.swift; sourceTree = "<group>"; };
+		62A6AB541EA0F96D00972E66 /* Gitgame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Gitgame-Bridging-Header.h"; path = "../Gitgame-Bridging-Header.h"; sourceTree = "<group>"; };
 		62AEE5F71E852EE3008C80C5 /* productsans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = productsans.ttf; sourceTree = "<group>"; };
 		62C57A9B1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62C57A9D1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -213,7 +214,7 @@
 			children = (
 				62DEBAD71E93AB53000FB62F /* SWRevealViewController.m */,
 				62DEBAD91E93ABE8000FB62F /* SWRevealViewController.h */,
-				624396C81E5F91FB00AF90D0 /* Gitgame-Bridging-Header.h */,
+				62A6AB541EA0F96D00972E66 /* Gitgame-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
 			path = "Code Heroes";
@@ -447,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A6AB551EA0F96D00972E66 /* Gitgame-Bridging-Header.h in Sources */,
 				62A6AB531EA0F78300972E66 /* UserDetailController.swift in Sources */,
 				62A6AB471EA0F6AF00972E66 /* AppDelegate.swift in Sources */,
 				62A6AB481EA0F6AF00972E66 /* LoginController.swift in Sources */,
