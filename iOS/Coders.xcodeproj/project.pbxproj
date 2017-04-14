@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B4DD0D3FC9B429C9DEA9BEA /* Pods_Code_HeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */; };
-		622FF47D1E826FA0005ECABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622FF47C1E826FA0005ECABB /* Assets.xcassets */; };
+		6209B2421EA1026B00FA36E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6209B2411EA1026B00FA36E7 /* Assets.xcassets */; };
 		624396BD1E5F91A200AF90D0 /* GitgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624396BC1E5F91A200AF90D0 /* GitgameTests.swift */; };
 		624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */; };
 		62A6AB651EA0FD6100972E66 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB641EA0FD6100972E66 /* UserDetailController.swift */; };
@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_HeroesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		622FF47C1E826FA0005ECABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/arwinstrating/Desktop/XCode/codeheroes/iOS/Coders/Assets.xcassets; sourceTree = "<absolute>"; };
+		6209B2411EA1026B00FA36E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Coders/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		624396A11E5F91A200AF90D0 /* Coders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624396B81E5F91A200AF90D0 /* CodersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		624396BC1E5F91A200AF90D0 /* GitgameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitgameTests.swift; path = CodersTests/GitgameTests.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 				62A6AB741EA0FD7E00972E66 /* WebViewController.swift */,
 				62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */,
 				62A6AB641EA0FD6100972E66 /* UserDetailController.swift */,
-				622FF47C1E826FA0005ECABB /* Assets.xcassets */,
+				6209B2411EA1026B00FA36E7 /* Assets.xcassets */,
 			);
 			name = Coders;
 			path = "Code Heroes";
@@ -295,7 +295,7 @@
 				62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */,
 				62A6AB851EA0FEDD00972E66 /* Info.plist in Resources */,
 				62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */,
-				622FF47D1E826FA0005ECABB /* Assets.xcassets in Resources */,
+				6209B2421EA1026B00FA36E7 /* Assets.xcassets in Resources */,
 				624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */,
 				62A6AB871EA0FEE500972E66 /* GoogleService-Info.plist in Resources */,
 			);
