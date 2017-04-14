@@ -109,6 +109,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6209B2431EA10AF300FA36E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62A6AB6C1EA0FD7E00972E66 /* ProjectTableViewCell.swift */,
+				62A6AB6E1EA0FD7E00972E66 /* RepoTableViewCell.swift */,
+				62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6209B2441EA10B0400FA36E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62A6AB721EA0FD7E00972E66 /* UserController.swift */,
+				62A6AB741EA0FD7E00972E66 /* WebViewController.swift */,
+				62A6AB681EA0FD7E00972E66 /* LoginController.swift */,
+				62A6AB691EA0FD7E00972E66 /* MenuController.swift */,
+				62A6AB6A1EA0FD7E00972E66 /* ProfileController.swift */,
+				62A6AB6B1EA0FD7E00972E66 /* ProjectController.swift */,
+				62A6AB6D1EA0FD7E00972E66 /* RepositoriesController.swift */,
+				62A6AB6F1EA0FD7E00972E66 /* StatsController.swift */,
+				62A6AB641EA0FD6100972E66 /* UserDetailController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6209B2451EA10B1D00FA36E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				62A6AB701EA0FD7E00972E66 /* SWRevealViewController.h */,
+				62A6AB711EA0FD7E00972E66 /* SWRevealViewController.m */,
+				62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6209B2461EA10B2900FA36E7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				62A6AB861EA0FEE500972E66 /* GoogleService-Info.plist */,
+				62A6AB821EA0FEDD00972E66 /* Gitgame.xcdatamodeld */,
+				62A6AB831EA0FEDD00972E66 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		6209B2471EA10B3400FA36E7 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
 		622FF45C1E826D57005ECABB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,25 +197,11 @@
 		624396A31E5F91A200AF90D0 /* Coders */ = {
 			isa = PBXGroup;
 			children = (
-				62A6AB861EA0FEE500972E66 /* GoogleService-Info.plist */,
-				62A6AB821EA0FEDD00972E66 /* Gitgame.xcdatamodeld */,
-				62A6AB831EA0FEDD00972E66 /* Info.plist */,
-				62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */,
-				62A6AB681EA0FD7E00972E66 /* LoginController.swift */,
-				62A6AB691EA0FD7E00972E66 /* MenuController.swift */,
-				62A6AB6A1EA0FD7E00972E66 /* ProfileController.swift */,
-				62A6AB6B1EA0FD7E00972E66 /* ProjectController.swift */,
-				62A6AB6C1EA0FD7E00972E66 /* ProjectTableViewCell.swift */,
-				62A6AB6D1EA0FD7E00972E66 /* RepositoriesController.swift */,
-				62A6AB6E1EA0FD7E00972E66 /* RepoTableViewCell.swift */,
-				62A6AB6F1EA0FD7E00972E66 /* StatsController.swift */,
-				62A6AB701EA0FD7E00972E66 /* SWRevealViewController.h */,
-				62A6AB711EA0FD7E00972E66 /* SWRevealViewController.m */,
-				62A6AB721EA0FD7E00972E66 /* UserController.swift */,
-				62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */,
-				62A6AB741EA0FD7E00972E66 /* WebViewController.swift */,
-				62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */,
-				62A6AB641EA0FD6100972E66 /* UserDetailController.swift */,
+				6209B2471EA10B3400FA36E7 /* Delegate */,
+				6209B2441EA10B0400FA36E7 /* Controllers */,
+				6209B2451EA10B1D00FA36E7 /* Helpers */,
+				6209B2431EA10AF300FA36E7 /* Models */,
+				6209B2461EA10B2900FA36E7 /* Other */,
 				6209B2411EA1026B00FA36E7 /* Assets.xcassets */,
 			);
 			name = Coders;
