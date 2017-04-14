@@ -102,7 +102,7 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let key = String(child.key)
                 let name = child.childSnapshot(forPath: "name").value!
                 let score = child.childSnapshot(forPath: "score").value!
-                let user = [ "name": key, "score": score, "fullname": name] as [String : Any]
+                let user = [ "name": key!, "score": score, "fullname": name] as [String : Any]
                 self.users.append(User(json: user as NSDictionary))
                 
             }
