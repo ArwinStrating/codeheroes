@@ -23,6 +23,8 @@ class Repository {
     }
 }
 
+var ref: FIRDatabaseReference!
+
 class RepositoriesController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -55,7 +57,7 @@ class RepositoriesController: UITableViewController {
             
         }
         
-        dataRequest()
+        getRepos()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,9 +65,23 @@ class RepositoriesController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func dataRequest() {
+    func getRepos() {
+        var githubName = ""
         
-        let url = URL(string: "https://api.github.com/users/ArwinStrating/subscriptions")
+        ref = FIRDatabase.database().reference()
+        let userID = FIRAuth.auth()?.currentUser?.uid
+        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            githubName = value?["github_username"] as? String ?? ""
+            self.dataRequest(githubName: githubName)
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func dataRequest(githubName: String) {
+        let url = URL(string: "https://api.github.com/users/" + githubName + "/subscriptions")
         URLSession.shared.dataTask(with:url!) { (data, response, error) in
         if error != nil {
             print(error ?? "Unknown error")
@@ -109,7 +125,7 @@ class RepositoriesController: UITableViewController {
     func refreshData()
     {
         DispatchQueue.main.async(execute: {
-            self.dataRequest()
+            self.getRepos()
             print("data reloaded")
             self.refreshControl!.endRefreshing()
             return

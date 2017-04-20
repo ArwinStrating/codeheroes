@@ -21,6 +21,7 @@ class StatsController: UIViewController {
     var months: [String]!
     var unitsSold: [Int]!
     var commits: [Int]!
+    var totalScore: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,118 +89,51 @@ class StatsController: UIViewController {
         barChartView.leftAxis.drawLabelsEnabled = false
         barChartView.rightAxis.drawLabelsEnabled = false
         barChartView.drawValueAboveBarEnabled = false
+        barChartView.xAxis.yOffset = -15
         // Set xAxis text to months
         barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:months)
         barChartView.xAxis.granularity = 1
+        barChartView.xAxis.setLabelCount(24, force: true)
     }
     
     func getStats() {
         var commits = [Int]()
         
-        var lastYearCount = 0
-        var novCountLastYear = 0
-        var thisYearCount = 0
-        var janCountThisYear = 0
-        var febCountThisYear = 0
-        var marCountThisYear = 0
-        var aprCountThisYear = 0
-        var mayCountThisYear = 0
-        var junCountThisYear = 0
-        var julCountThisYear = 0
-        var augCountThisYear = 0
-        var sepCountThisYear = 0
-        var octCountThisYear = 0
-        var novCountThisYear = 0
-        var decCountThisYear = 0
-        
-        ref = FIRDatabase.database().reference().child("on").child("commit")
+        ref = FIRDatabase.database().reference().child("metrics").child("user").child("commits_per_month")
         ref.observe(.value, with: { snapshot in
-            print(snapshot.childrenCount)
-            self.commitsLabel.text = String(snapshot.childrenCount) + " commits"
             for child in snapshot.children.allObjects as? [FIRDataSnapshot] ?? [] {
-                let timestamp = child.childSnapshot(forPath: "timestamp").value! as! String
-                let index = timestamp.index(timestamp.startIndex, offsetBy: 4)
-                let monthIndexStart = timestamp.index(timestamp.startIndex, offsetBy: 5)
-                let monthIndexEnd = timestamp.index(timestamp.startIndex, offsetBy: 7)
+                let key = child.key
+                let index = key.index(key.startIndex, offsetBy: 4)
+                let monthIndexStart = key.index(key.startIndex, offsetBy: 4)
+                let monthIndexEnd = key.index(key.startIndex, offsetBy: 6)
                 let monthRange = monthIndexStart..<monthIndexEnd
-                let year = timestamp.substring(to: index)
-                let month = timestamp.substring(with: monthRange)
+                let year = key.substring(to: index)
+                let month = key.substring(with: monthRange)
+                print(year, month)
                 if(year == "2016") {
-                    lastYearCount += 1
                     if(month == "11") {
-                        novCountLastYear += 1
+                        for childTwo in child.children.allObjects as? [FIRDataSnapshot] ?? [] {
+                            print(childTwo.childSnapshot(forPath: "score").value!)
+                        }
                     }
                 }
                 if(year == "2017") {
-                    thisYearCount += 1
-                    if(month == "01") {
-                        janCountThisYear += 1
+                    var totalScore: Int = 0
+                    for childTwo in child.children.allObjects as? [FIRDataSnapshot] ?? [] {
+                        totalScore += childTwo.childSnapshot(forPath: "score").value! as! Int
                     }
-                    if(month == "02") {
-                        febCountThisYear += 1
-                    }
-                    if(month == "03") {
-                        marCountThisYear += 1
-                    }
-                    if(month == "04") {
-                        aprCountThisYear += 1
-                    }
-                    if(month == "05") {
-                        mayCountThisYear += 1
-                    }
-                    if(month == "06") {
-                        junCountThisYear += 1
-                    }
-                    if(month == "07") {
-                        julCountThisYear += 1
-                    }
-                    if(month == "08") {
-                        augCountThisYear += 1
-                    }
-                    if(month == "09") {
-                        sepCountThisYear += 1
-                    }
-                    if(month == "10") {
-                        octCountThisYear += 1
-                    }
-                    if(month == "11") {
-                        novCountThisYear += 1
-                    }
-                    if(month == "12") {
-                        decCountThisYear += 1
-                    }
+                    print("Commits ", month, ": " ,totalScore)
+                    commits.append(totalScore)
                 }
             }
-            commits.append(janCountThisYear)
-            commits.append(febCountThisYear)
-            commits.append(marCountThisYear)
-            commits.append(aprCountThisYear)
-            commits.append(mayCountThisYear)
-            commits.append(junCountThisYear)
-            commits.append(julCountThisYear)
-            commits.append(augCountThisYear)
-            commits.append(sepCountThisYear)
-            commits.append(octCountThisYear)
-            commits.append(novCountThisYear)
-            commits.append(decCountThisYear)
-
-            print(commits)
+            var i = 1
+            while i <= 12 {
+                if(commits.count < 12) {
+                    commits.append(0)
+                }
+                i = i + 1
+            }
             
-            print("2016: " + String(lastYearCount))
-            print("2016 nov: " + String(novCountLastYear))
-            print("2017: " + String(thisYearCount))
-            print("2017 jan: " + String(janCountThisYear))
-            print("2017 feb: " + String(febCountThisYear))
-            print("2017 mar: " + String(marCountThisYear))
-            print("2017 apr: " + String(aprCountThisYear))
-            print("2017 may: " + String(mayCountThisYear))
-            print("2017 jun: " + String(junCountThisYear))
-            print("2017 jul: " + String(julCountThisYear))
-            print("2017 aug: " + String(augCountThisYear))
-            print("2017 sep: " + String(sepCountThisYear))
-            print("2017 oct: " + String(octCountThisYear))
-            print("2017 nov: " + String(novCountThisYear))
-            print("2017 dec: " + String(decCountThisYear))
             PKHUD.sharedHUD.hide()
             self.setChart(dataPoints: self.months, values: commits)
         })
