@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13E71D4A65A8F023D7CC3000 /* Pods_Coders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDA85763BD2B7190855AFC3 /* Pods_Coders.framework */; };
 		1B4DD0D3FC9B429C9DEA9BEA /* Pods_Code_HeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */; };
 		6209B2421EA1026B00FA36E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6209B2411EA1026B00FA36E7 /* Assets.xcassets */; };
 		6234D1EE1EAEAB630009A898 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234D1ED1EAEAB630009A898 /* UserController.swift */; };
 		6243166B1EAE8C3700EDEC3E /* SegmentedControlCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6243166A1EAE8C3700EDEC3E /* SegmentedControlCustom.swift */; };
 		624396BD1E5F91A200AF90D0 /* GitgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624396BC1E5F91A200AF90D0 /* GitgameTests.swift */; };
 		624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */; };
+		624C22511EAF4E050079513B /* Pods_Coders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C224F1EAF4E050079513B /* Pods_Coders.framework */; };
+		624C22521EAF4E050079513B /* Pods_CodersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C22501EAF4E050079513B /* Pods_CodersTests.framework */; };
 		62A6AB651EA0FD6100972E66 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB641EA0FD6100972E66 /* UserDetailController.swift */; };
 		62A6AB751EA0FD7E00972E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */; };
 		62A6AB761EA0FD7E00972E66 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB681EA0FD7E00972E66 /* LoginController.swift */; };
@@ -33,7 +34,6 @@
 		62AEE5F81E852EEC008C80C5 /* productsans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62AEE5F71E852EE3008C80C5 /* productsans.ttf */; };
 		62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9A1E84332E0083D97C /* Main.storyboard */; };
 		62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */; };
-		E2A50864AFDEA44CA1B1B371 /* Pods_Code_Heroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC85623D7AD0BC0937AD2778 /* Pods_Code_Heroes.framework */; };
 		E3477A1EA8E26E5533C7572D /* Pods_CodersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8811C0709C9654C4E241C9AE /* Pods_CodersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +59,8 @@
 		624396BC1E5F91A200AF90D0 /* GitgameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitgameTests.swift; path = CodersTests/GitgameTests.swift; sourceTree = "<group>"; };
 		624396BE1E5F91A200AF90D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CodersTests/Info.plist; sourceTree = "<group>"; };
 		624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ApexSansBoldST-Regular.ttf"; sourceTree = "<group>"; };
+		624C224F1EAF4E050079513B /* Pods_Coders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Coders.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Coders-dcqsmdfyrjhbscevoynbqeogacqy/Build/Products/Debug-iphonesimulator/Pods_Coders.framework"; sourceTree = "<group>"; };
+		624C22501EAF4E050079513B /* Pods_CodersTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_CodersTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_CodersTests.framework"; sourceTree = "<group>"; };
 		62A6AB641EA0FD6100972E66 /* UserDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = SOURCE_ROOT; };
 		62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gitgame-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		62A6AB671EA0FD7E00972E66 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Coders/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -95,8 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A50864AFDEA44CA1B1B371 /* Pods_Code_Heroes.framework in Frameworks */,
-				13E71D4A65A8F023D7CC3000 /* Pods_Coders.framework in Frameworks */,
+				624C22511EAF4E050079513B /* Pods_Coders.framework in Frameworks */,
+				624C22521EAF4E050079513B /* Pods_CodersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,8 @@
 		5B1B0470B72177AD62442934 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				624C224F1EAF4E050079513B /* Pods_Coders.framework */,
+				624C22501EAF4E050079513B /* Pods_CodersTests.framework */,
 				BC85623D7AD0BC0937AD2778 /* Pods_Code_Heroes.framework */,
 				5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */,
 				BEDA85763BD2B7190855AFC3 /* Pods_Coders.framework */,
@@ -626,6 +630,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YQ62CYT4B3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/Firebase/Core/Sources",
@@ -660,6 +668,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = YQ62CYT4B3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/Firebase/Core/Sources",
