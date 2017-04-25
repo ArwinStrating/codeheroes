@@ -27,6 +27,7 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segmentedControlCustom: SegmentedControlCustom!
     var segmentControlIndex: Int = 0
     
     var ref: FIRDatabaseReference!
@@ -42,6 +43,12 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem?.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "ProductSans-Regular", size: 17.0)!, NSForegroundColorAttributeName: UIColor.white]
+        
+        segmentedControlCustom.items = ["Day", "Week", "Month"]
+        segmentedControlCustom.font = UIFont(name: "Avenir-Black", size: 12)
+        segmentedControlCustom.borderColor = UIColor(white: 0.5, alpha: 1.0)
+        segmentedControlCustom.selectedIndex = 0
+        segmentedControlCustom.addTarget(self, action: #selector(UserController.segmentValueChanged(_:)), for: .valueChanged)
         
         // Activity Indicator
         PKHUD.sharedHUD.contentView = PKHUDProgressView()
@@ -148,9 +155,15 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Instantiate cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! UserTableViewCell
         
-        cell.userLabel.text = users.sorted(by: { $0.score! > $1.score! })[indexPath.row].fullname!
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor(rgb: 0xEAEAEA)
+        }else{
+            cell.backgroundColor = UIColor.white
+        }
+        
+        cell.userLabel.text = String(String(describing: indexPath.row + 1) + ". " + users.sorted(by: { $0.score! > $1.score! })[indexPath.row].fullname!)
         cell.scoreLabel.text = String(users.sorted(by: { $0.score! > $1.score! })[indexPath.row].score!)
-    
+        
         // Hide loader
         PKHUD.sharedHUD.hide()
         
@@ -174,20 +187,20 @@ class UserController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 
-    
-    @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
-        if(sender.selectedSegmentIndex == 0) {
-            segmentControlIndex = sender.selectedSegmentIndex
-            dataRequest(segmentIndex: sender.selectedSegmentIndex)
-        }
-        else if(sender.selectedSegmentIndex == 1) {
-            segmentControlIndex = sender.selectedSegmentIndex
-            dataRequest(segmentIndex: sender.selectedSegmentIndex)
-        }
-        else if(sender.selectedSegmentIndex == 2){
-            segmentControlIndex = sender.selectedSegmentIndex
-            dataRequest(segmentIndex: sender.selectedSegmentIndex)
-        }
+    @IBAction func segmentValueChanged(_ sender: Any) {
+            if(segmentedControlCustom.selectedIndex == 0) {
+                segmentControlIndex = segmentedControlCustom.selectedIndex
+                dataRequest(segmentIndex:segmentedControlCustom.selectedIndex)
+            }
+            else if(segmentedControlCustom.selectedIndex == 1) {
+                segmentControlIndex = segmentedControlCustom.selectedIndex
+                dataRequest(segmentIndex: segmentedControlCustom.selectedIndex)
+            }
+            else if(segmentedControlCustom.selectedIndex == 2){
+                segmentControlIndex = segmentedControlCustom.selectedIndex
+                dataRequest(segmentIndex: segmentedControlCustom.selectedIndex)
+            }
+
     }
     
 }

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13E71D4A65A8F023D7CC3000 /* Pods_Coders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDA85763BD2B7190855AFC3 /* Pods_Coders.framework */; };
 		1B4DD0D3FC9B429C9DEA9BEA /* Pods_Code_HeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */; };
 		6209B2421EA1026B00FA36E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6209B2411EA1026B00FA36E7 /* Assets.xcassets */; };
+		6234D1EE1EAEAB630009A898 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234D1ED1EAEAB630009A898 /* UserController.swift */; };
+		6243166B1EAE8C3700EDEC3E /* SegmentedControlCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6243166A1EAE8C3700EDEC3E /* SegmentedControlCustom.swift */; };
 		624396BD1E5F91A200AF90D0 /* GitgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624396BC1E5F91A200AF90D0 /* GitgameTests.swift */; };
 		624432821E6574D300EF97F8 /* ApexSansBoldST-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624432811E65749A00EF97F8 /* ApexSansBoldST-Regular.ttf */; };
 		62A6AB651EA0FD6100972E66 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB641EA0FD6100972E66 /* UserDetailController.swift */; };
@@ -22,7 +25,6 @@
 		62A6AB7C1EA0FD7E00972E66 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB6E1EA0FD7E00972E66 /* RepoTableViewCell.swift */; };
 		62A6AB7D1EA0FD7E00972E66 /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB6F1EA0FD7E00972E66 /* StatsController.swift */; };
 		62A6AB7E1EA0FD7E00972E66 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB711EA0FD7E00972E66 /* SWRevealViewController.m */; };
-		62A6AB7F1EA0FD7E00972E66 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB721EA0FD7E00972E66 /* UserController.swift */; };
 		62A6AB801EA0FD7E00972E66 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */; };
 		62A6AB811EA0FD7E00972E66 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB741EA0FD7E00972E66 /* WebViewController.swift */; };
 		62A6AB841EA0FEDD00972E66 /* Gitgame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62A6AB821EA0FEDD00972E66 /* Gitgame.xcdatamodeld */; };
@@ -32,6 +34,7 @@
 		62C57A9E1E84332E0083D97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9A1E84332E0083D97C /* Main.storyboard */; };
 		62C57A9F1E84332E0083D97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C57A9C1E84332E0083D97C /* LaunchScreen.storyboard */; };
 		E2A50864AFDEA44CA1B1B371 /* Pods_Code_Heroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC85623D7AD0BC0937AD2778 /* Pods_Code_Heroes.framework */; };
+		E3477A1EA8E26E5533C7572D /* Pods_CodersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8811C0709C9654C4E241C9AE /* Pods_CodersTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077CE490E33B4D61992496AF /* Pods-CodersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodersTests/Pods-CodersTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E1A6DB13C6D7F1C2B2FDAD0 /* Pods-Coders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coders.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coders/Pods-Coders.release.xcconfig"; sourceTree = "<group>"; };
 		5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_HeroesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6209B2411EA1026B00FA36E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Coders/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		6234D1ED1EAEAB630009A898 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = Coders/UserController.swift; sourceTree = SOURCE_ROOT; };
+		6243166A1EAE8C3700EDEC3E /* SegmentedControlCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlCustom.swift; sourceTree = SOURCE_ROOT; };
 		624396A11E5F91A200AF90D0 /* Coders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624396B81E5F91A200AF90D0 /* CodersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		624396BC1E5F91A200AF90D0 /* GitgameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitgameTests.swift; path = CodersTests/GitgameTests.swift; sourceTree = "<group>"; };
@@ -65,7 +72,6 @@
 		62A6AB6F1EA0FD7E00972E66 /* StatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatsController.swift; path = Coders/StatsController.swift; sourceTree = SOURCE_ROOT; };
 		62A6AB701EA0FD7E00972E66 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Coders/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
 		62A6AB711EA0FD7E00972E66 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Coders/SWRevealViewController.m; sourceTree = SOURCE_ROOT; };
-		62A6AB721EA0FD7E00972E66 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = Coders/UserController.swift; sourceTree = SOURCE_ROOT; };
 		62A6AB731EA0FD7E00972E66 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Coders/UserTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		62A6AB741EA0FD7E00972E66 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Coders/WebViewController.swift; sourceTree = SOURCE_ROOT; };
 		62A6AB831EA0FEDD00972E66 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Coders/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -74,10 +80,14 @@
 		62C57A9B1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62C57A9D1E84332E0083D97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Coders/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6437F6A7575B3CC2BDCEA31F /* Pods-Code HeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code HeroesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Code HeroesTests/Pods-Code HeroesTests.release.xcconfig"; sourceTree = "<group>"; };
+		8811C0709C9654C4E241C9AE /* Pods_CodersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4BF510CFF995FBC2D67412E /* Pods-CodersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodersTests/Pods-CodersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC85623D7AD0BC0937AD2778 /* Pods_Code_Heroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code_Heroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDA85763BD2B7190855AFC3 /* Pods_Coders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA161AE797DBDFCB2B8BAF4A /* Pods-Code Heroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Heroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Code Heroes/Pods-Code Heroes.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0671575C372D8B23420506 /* Pods-Code HeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code HeroesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Code HeroesTests/Pods-Code HeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F12E7206AA982376ED448A47 /* Pods-Code Heroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Heroes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Code Heroes/Pods-Code Heroes.release.xcconfig"; sourceTree = "<group>"; };
+		FE2FF9865D8B8B08E76E8418 /* Pods-Coders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coders/Pods-Coders.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A50864AFDEA44CA1B1B371 /* Pods_Code_Heroes.framework in Frameworks */,
+				13E71D4A65A8F023D7CC3000 /* Pods_Coders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4DD0D3FC9B429C9DEA9BEA /* Pods_Code_HeroesTests.framework in Frameworks */,
+				E3477A1EA8E26E5533C7572D /* Pods_CodersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +117,8 @@
 			children = (
 				BC85623D7AD0BC0937AD2778 /* Pods_Code_Heroes.framework */,
 				5E4B93AFC0463F9E309D9E54 /* Pods_Code_HeroesTests.framework */,
+				BEDA85763BD2B7190855AFC3 /* Pods_Coders.framework */,
+				8811C0709C9654C4E241C9AE /* Pods_CodersTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,7 +136,7 @@
 		6209B2441EA10B0400FA36E7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				62A6AB721EA0FD7E00972E66 /* UserController.swift */,
+				6234D1ED1EAEAB630009A898 /* UserController.swift */,
 				62A6AB741EA0FD7E00972E66 /* WebViewController.swift */,
 				62A6AB681EA0FD7E00972E66 /* LoginController.swift */,
 				62A6AB691EA0FD7E00972E66 /* MenuController.swift */,
@@ -141,6 +155,7 @@
 				62A6AB701EA0FD7E00972E66 /* SWRevealViewController.h */,
 				62A6AB711EA0FD7E00972E66 /* SWRevealViewController.m */,
 				62A6AB661EA0FD6B00972E66 /* Gitgame-Bridging-Header.h */,
+				6243166A1EAE8C3700EDEC3E /* SegmentedControlCustom.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -234,6 +249,10 @@
 				F12E7206AA982376ED448A47 /* Pods-Code Heroes.release.xcconfig */,
 				CE0671575C372D8B23420506 /* Pods-Code HeroesTests.debug.xcconfig */,
 				6437F6A7575B3CC2BDCEA31F /* Pods-Code HeroesTests.release.xcconfig */,
+				FE2FF9865D8B8B08E76E8418 /* Pods-Coders.debug.xcconfig */,
+				4E1A6DB13C6D7F1C2B2FDAD0 /* Pods-Coders.release.xcconfig */,
+				A4BF510CFF995FBC2D67412E /* Pods-CodersTests.debug.xcconfig */,
+				077CE490E33B4D61992496AF /* Pods-CodersTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -363,7 +382,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Code HeroesTests/Pods-Code HeroesTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodersTests/Pods-CodersTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7A78DF1FBEB58FAEF267F828 /* [CP] Embed Pods Frameworks */ = {
@@ -378,7 +397,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Code Heroes/Pods-Code Heroes-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coders/Pods-Coders-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7C8923C5952BB46FDE2035CA /* [CP] Copy Pods Resources */ = {
@@ -393,7 +412,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Code HeroesTests/Pods-Code HeroesTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodersTests/Pods-CodersTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8C5D9FA8AFAFC15B6052FD89 /* [CP] Check Pods Manifest.lock */ = {
@@ -438,7 +457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Code Heroes/Pods-Code Heroes-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coders/Pods-Coders-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -450,11 +469,11 @@
 			files = (
 				62A6AB7E1EA0FD7E00972E66 /* SWRevealViewController.m in Sources */,
 				62A6AB781EA0FD7E00972E66 /* ProfileController.swift in Sources */,
+				6234D1EE1EAEAB630009A898 /* UserController.swift in Sources */,
 				62A6AB7A1EA0FD7E00972E66 /* ProjectTableViewCell.swift in Sources */,
 				62A6AB841EA0FEDD00972E66 /* Gitgame.xcdatamodeld in Sources */,
 				62A6AB751EA0FD7E00972E66 /* AppDelegate.swift in Sources */,
 				62A6AB801EA0FD7E00972E66 /* UserTableViewCell.swift in Sources */,
-				62A6AB7F1EA0FD7E00972E66 /* UserController.swift in Sources */,
 				62A6AB651EA0FD6100972E66 /* UserDetailController.swift in Sources */,
 				62A6AB7C1EA0FD7E00972E66 /* RepoTableViewCell.swift in Sources */,
 				62A6AB7D1EA0FD7E00972E66 /* StatsController.swift in Sources */,
@@ -462,6 +481,7 @@
 				62A6AB7B1EA0FD7E00972E66 /* RepositoriesController.swift in Sources */,
 				62A6AB771EA0FD7E00972E66 /* MenuController.swift in Sources */,
 				62A6AB761EA0FD7E00972E66 /* LoginController.swift in Sources */,
+				6243166B1EAE8C3700EDEC3E /* SegmentedControlCustom.swift in Sources */,
 				62A6AB811EA0FD7E00972E66 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,7 +619,7 @@
 		};
 		624396C21E5F91A200AF90D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA161AE797DBDFCB2B8BAF4A /* Pods-Code Heroes.debug.xcconfig */;
+			baseConfigurationReference = FE2FF9865D8B8B08E76E8418 /* Pods-Coders.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -633,7 +653,7 @@
 		};
 		624396C31E5F91A200AF90D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F12E7206AA982376ED448A47 /* Pods-Code Heroes.release.xcconfig */;
+			baseConfigurationReference = 4E1A6DB13C6D7F1C2B2FDAD0 /* Pods-Coders.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -666,7 +686,7 @@
 		};
 		624396C51E5F91A200AF90D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE0671575C372D8B23420506 /* Pods-Code HeroesTests.debug.xcconfig */;
+			baseConfigurationReference = A4BF510CFF995FBC2D67412E /* Pods-CodersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,7 +714,7 @@
 		};
 		624396C61E5F91A200AF90D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6437F6A7575B3CC2BDCEA31F /* Pods-Code HeroesTests.release.xcconfig */;
+			baseConfigurationReference = 077CE490E33B4D61992496AF /* Pods-CodersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
